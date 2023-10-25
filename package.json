@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
-    "start": "node public/index.js",
+    "start": "nodemon public/index.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q public/index.js\""
   },
   "author": "",
